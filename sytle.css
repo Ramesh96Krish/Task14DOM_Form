@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap');
+.header{
+    background-color: antiquewhite;
+    margin-top: 50px;
+}
+#Title{
+    text-align: center;
+    color:green;
+}
+#Description{
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+#food{
+    font-size: 20px;
+    color: brown;
+}
+button{
+    border-radius: 13px;
+    background-color: black;
+    color: seashell;
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 40px;
+    margin-top:20px;
+}
+button:hover{
+    cursor: pointer;
+}
+.genderName{
+    font-size: 20px;
+}
+
+table,tr,th,td{
+   border: 1px solid bisque;
+}
+th{
+    width: 200px;
+    height: 30px;
+    background-color: bisque;
+}
+b{
+    font-size: 30px;
+}
+form{
+    background-color:gainsboro;
+}

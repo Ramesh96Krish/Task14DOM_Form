@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="sytle.css">
+    <title>Form using DOM</title>
+</head>
+<body>
+<div class="header">
+    <h1 id="Title">Interactive Forms</h1>
+    <p id="Description">This Forms are used to get the data from the user & used to update the results in the Table.<br>
+        <span style="color: brown;">(Data's are retrieved using the DOM)</span></p>
+</div>
+ <form id="form">
+    <label> First Name </label>
+    <input type="text" id="firstname" placeholder="Enter the Firstname">
+    <label>Last Name</label>
+    <input type="text" id="lastname" placeholder="Enter the Lastname"><br><br>
+    <label>Gender:</label>
+    <input type="radio" id="gender" name="gender" Value="Male"><label>Male</label>
+    <input type="radio" id="gender" name="gender"Value="Female"><label>Female</label>
+    <input type="radio" id="gender" name="gender" Value="Others"><label>Others</label><br><br>
+    <label>Address :</label>
+    <textarea placeholder="Enter your address" id="Address"></textarea><br><br>
+    <label>Pincode</label>
+    <input type="text" placeholder="Enter your Pincode" id="Pincode"><br><br>
+    <label>State</label>
+    <input type="text" placeholder="Enter your State" id="State"><br><br>
+    <label>Country</label>
+    <input type="text" placeholder="Enter your Country" id="Country"><br><br>
+    <label>Select the Food Cuisine you like (Minimum 2): </label>
+    <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="South Indian"/><label id="food">South Indian</label>
+    <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="North Indian"/><label id="food">North Indian</label>
+    <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Vietnamese"/><label id="food">Vietnamese</label>
+    <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Lebanese"/><label id="food">Lebanese</label>
+    <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Italian"/><label id="food">Italian</label><br><br>
+    <button type="submit" class="btn" id="submit">Submit</button>
+</form>
+<div class="Table">
+    <table class="Result" id="Table">
+        <thead><b>Data-Table</b></thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Food</th>
+        </tr>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
